@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Masterclass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>User Management Dashboard</h1>
+            <p>API & Async/Await Demo</p>
+        </header>
+
+        <!-- Post Method Demo -->
+        <section class="card form-card">
+            <h2>Add New User (POST)</h2>
+            <form id="add-user-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <button type="submit" id="btn-submit">create User</button>
+            </form>
+        </section>
+
+        <!-- Get Method Demo -->
+        <section class="card list-card">
+            <div class="list-header">
+                <h2>Users List (GET)</h2>
+                <button id="btn-refresh" class="btn-secondary">Refresh Data</button>
+            </div>
+
+            <div id="loading" class="hidden">Loading users...</div>
+            <div id="error-msg" class="hidden"></div>
+
+            <div id="user-grid" class="user-grid">
+                <!-- User Cards Injected Here -->
+            </div>
+        </section>
+
+        <!-- Concepts Comparison -->
+        <section class="card concepts-card">
+            <h2>Under the Hood: Concepts</h2>
+            <div class="console-box">
+                <p>Check the Browser Console (F12) to see:</p>
+                <ul>
+                    <li>Status Code Logs</li>
+                    <li>JSON Object Structures</li>
+                    <li><strong>Promise vs Async/Await</strong> comparison output</li>
+                    <li>CORS explanations</li>
+                </ul>
+                <button onclick="runComparisonDemo()">Run Comparison Demo</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="concepts.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

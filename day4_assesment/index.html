@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals</h1>
+            <p>Practice Playground</p>
+        </header>
+
+        <main>
+            <section id="counter-app">
+                <h2>1. Counter App</h2>
+                <div class="counter-display">
+                    <span id="count">0</span>
+                </div>
+                <div class="controls">
+                    <button id="btn-decrease">-</button>
+                    <button id="btn-reset">Reset</button>
+                    <button id="btn-increase">+</button>
+                </div>
+            </section>
+
+            <section id="form-app">
+                <h2>2. Form Validation</h2>
+                <form id="practice-form" novalidate>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter username">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Min 6 chars">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <button type="submit">Register</button>
+                </form>
+                <section id="topics-app">
+                    <h2>3. Concepts Demo</h2>
+
+                    <div class="concept-item">
+                        <h3>Variables</h3>
+                        <button onclick="demoVariables()">Show Values</button>
+                        <div id="output-variables" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Data Types</h3>
+                        <button onclick="demoDataTypes()">Check Types</button>
+                        <div id="output-types" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Hoisting</h3>
+                        <button onclick="demoHoisting()">Run Demo</button>
+                        <div id="output-hoisting" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Loops</h3>
+                        <button onclick="demoLoops()">Run Loop</button>
+                        <div id="output-loops" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Scope</h3>
+                        <button onclick="demoScope()">Test Scope</button>
+                        <div id="output-scope" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Arrays</h3>
+                        <button onclick="demoArrays()">Process Data</button>
+                        <div id="output-arrays" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Call Stack</h3>
+                        <button onclick="demoCallStack()">Trace Stack</button>
+                        <div id="output-stack" class="output-simple"></div>
+                    </div>
+
+                    <div class="concept-item">
+                        <h3>Debouncing</h3>
+                        <input type="text" id="debounce-input" placeholder="Type here...">
+                        <div id="output-debounce" class="output-simple">Waiting...</div>
+                    </div>
+                </section>
+        </main>
+    </div>
+
+    <script src="concepts.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
