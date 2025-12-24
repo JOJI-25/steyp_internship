@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+header {
+    background-color: #e40a0a;
+    color: #c6b7b7;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: #bf2323;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c6b7b7;
+}
+
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 60px;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+#skills ul {
+    list-style: none;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+
+}
+
+
+#skills ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #e40a0a;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #bf2323;
+    color: #fff;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 80px auto 20px;
+    padding: 0 1rem;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 1rem;
+        margin-top: 100px;
+    }
+
+
+    section {
+        padding: 1rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+
+    form {
+        max-width: 100%;
+    }
+
+    form input,
+    textarea {
+        font-size: 1rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+
+    .card-container {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 2rem;
+    }
+
+
+
+
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 300px;
+
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.counter-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#count {
+    font-size: 2.5rem;
+    font-weight: bold;
+    min-width: 3rem;
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+
+#increment {
+    background-color: #28a745;
+    color: white;
+}
+
+#increment:hover {
+    background-color: #218838;
+}
+
+#decrement {
+    background-color: #dc3545;
+    color: white;
+}
+
+#decrement:hover {
+    background-color: #c82333;
+}
+
+#reset {
+    background-color: #6c757d;
+    color: white;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+#reset:hover {
+    background-color: #5a6268;
+}
